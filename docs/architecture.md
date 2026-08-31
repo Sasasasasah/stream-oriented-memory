@@ -19,3 +19,7 @@ without replacing leaf-local memory behavior.
 
 Each bank leaf operates on an eight-byte segment. Groups and hemispheres scale
 this regular unit while preserving deterministic command timing.
+
+The default prototype configuration uses 52 slices and 416 producer candidates
+per hemisphere. These values are configuration choices for this model rather
+than a required general-purpose memory topology.

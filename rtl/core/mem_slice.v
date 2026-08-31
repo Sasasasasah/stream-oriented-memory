@@ -15,7 +15,7 @@ module mem_slice #(
     input  wire                         clk_i,
     input  wire                         rst_ni,
 
-    // Bank is selected structurally by the ICU issue queue location. There is
+    // Bank is selected structurally by its command issue queue position. There is
     // intentionally no runtime bank-select field in the 32-bit payload.
     input  wire [P_BANKS-1:0]           bank_issue_valid_i,
     input  wire [P_BANKS*32-1:0]        bank_issue_i,

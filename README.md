@@ -25,6 +25,15 @@ mem_full
 `-- hemisphere[1]
 ```
 
+The default configuration uses 52 slices and 416 producer candidates per
+hemisphere. These values describe the current prototype configuration rather
+than a required industry-standard topology.
+
+## Documentation
+
+- [Architecture](docs/architecture.md)
+- [Interface Notes](docs/interface.md)
+
 ## Cycle Semantics
 
 The implementation models deterministic scheduled accesses. Reads produce a
@@ -63,5 +72,6 @@ Expected final result:
 MEM_FULL_REGRESSION TEST_PASS
 ```
 
-This is a personal educational RTL/CModel architecture project. Verify that
+This repository is a cycle-aware RTL/C++ prototype for architectural modeling
+and verification; it is not a production memory IP implementation. Verify that
 you have the appropriate rights before publishing any derivative work.
